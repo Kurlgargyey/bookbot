@@ -1,1 +1,3 @@
-# BookBot is my first project
+# BookBot
+
+This is the first project I made on the boot.dev. It was mostly a practice for pushing things to github and making your own repo.
