@@ -2,7 +2,7 @@ def main():
 	path = "books/frankenstein.txt"
 	with open(path) as book:
 		contents = book.read()
-		report(path, word_count(contents), char_count(contents))
+		print_report(path, word_count(contents), char_count(contents))
 
 def word_count(string) -> int:
 	return len(string.split())
@@ -13,7 +13,7 @@ def char_count(string) -> dict:
 		tally[char] = tally.get(char, 0) + 1
 	return tally
 
-def report(path, word_count, char_count) -> str:
+def print_report(path, word_count, char_count) -> str:
 	print(f"report about book {path}\n")
 	print(f"the book contains {word_count} words! wow!")
 	for char, count in sorted(char_count.items(),
